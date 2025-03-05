@@ -12,8 +12,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
 
-
+    
+    
+    
+    
+    @IBOutlet weak var labelNumber: UILabel!
+    
+    private var number: Int = 0
+    
+    @IBAction func buttonPlus(_ sender: Any) {
+        number += 1
+        labelNumber.text = "Значение счетчика \(number)"
+        
+    }
+    
 }
 
