@@ -8,6 +8,10 @@
 import UIKit
 
 final class ViewController: UIViewController {
+    
+    override func viewDidLoad() {
+         super.viewDidLoad()
+         }
 
    @IBOutlet weak var labelNumber: UILabel!
     
@@ -38,9 +42,7 @@ final class ViewController: UIViewController {
     } }
     
     
-   override func viewDidLoad() {
-        super.viewDidLoad()
-        }
+   
     
     @IBAction func resetCounterValue(_ sender: Any) {
         let data1 = currentDate()
